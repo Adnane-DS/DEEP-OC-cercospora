@@ -1,0 +1,35 @@
+{
+    "title": "cercospora",
+    "summary": "Semantic segmentation with Unet",
+    "description": [
+		"This is cercospora application using DEEPaaS API",
+	],
+    "keywords": [
+        "docker",
+        "api-v2"
+    ],
+    "license": "MIT",
+    "date_creation": "2022-06-30",
+    "sources": {
+		"dockerfile_repo": "https://github.com/Adnane-DS/DEEP-OC-cercospora",
+		"docker_registry_repo": "adnaneds/deep-oc-cercospora",
+		"code": "https://github.com/Adnane-DS/cercospora"
+	},
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-cercospora/master",
+        "build_status_url": "https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-cercospora/job/master"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-marathon-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
