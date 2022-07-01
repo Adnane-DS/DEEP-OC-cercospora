@@ -2,7 +2,7 @@
     "title": "cercospora",
     "summary": "Semantic segmentation with Unet",
     "description": [
-		"This is cercospora application using DEEPaaS API",
+		"This is cercospora application using DEEPaaS API"
 	],
     "keywords": [
         "docker",
