@@ -66,6 +66,8 @@ ENV RCLONE_CONFIG=/srv/.rclone/rclone.conf
 # Install DEEPaaS from PyPi
 RUN pip install deepaas
 
+RUN pip install --upgrade git+https://github.com/indigo-dc/deepaas.git@master
+
 # Initialization scripts
 RUN git clone https://github.com/deephdc/deep-start /srv/.deep-start && \
     ln -s /srv/.deep-start/deep-start.sh /usr/local/bin/deep-start && \
